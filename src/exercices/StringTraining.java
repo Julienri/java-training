@@ -4,7 +4,7 @@ public class StringTraining {
      * @param firstname, ie : "Brandon"
      * @return a string that concatenates "Hello " and firstname, ie : "Hello Brandon"
      */
-    public static String firstname(String firstname) {
+    public static String helloFirstname(String firstname) {
 
         return "Hello " + firstname;
     }
@@ -16,7 +16,7 @@ public class StringTraining {
      */
     public static String concatArgs(String first, String second) {
 
-        return first+second;
+        return first + second;
     }
 
     /**
@@ -26,7 +26,6 @@ public class StringTraining {
      */
     public static boolean equals(String origin, String compare) {
         return origin.equals(compare);
-        
     }
 
     /**
@@ -101,7 +100,7 @@ public class StringTraining {
     public static String subString(String string, int begin, int end) {
         // https://howtodoinjava.com/java/string/java-string-substring-example/
 
-        return string.substring(begin,end);
+        return string.substring(begin, end);
     }
 
     /**
@@ -119,6 +118,7 @@ public class StringTraining {
      * @return the number of character occurrences in string, ie: 2
      */
     public static int occurrences(String string, char search) {
+
         int count = 0;
         for(int i=0;i<length(string);i++){
             if(string.charAt(i)==search){
@@ -126,7 +126,6 @@ public class StringTraining {
             }
         }
         return count;
-        
     }
 
     /**
@@ -158,7 +157,6 @@ public class StringTraining {
      */
     public static String[] split(String string, String delimiter) {
         // https://howtodoinjava.com/java/string/java-string-split-example/
-
         return string.split(delimiter);
     }
 
